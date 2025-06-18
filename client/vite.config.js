@@ -1,15 +1,15 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  server:{
-    port:3000
+  base: '/demo/', // 👈 Add this line (match your GitHub repo name)
+  server: {
+    port: 3000,
   },
-  css:{
-    preprocessorOptions:{
-      css:{},
+  css: {
+    preprocessorOptions: {
+      css: {},
     },
   },
-});
+})
